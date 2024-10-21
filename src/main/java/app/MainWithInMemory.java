@@ -52,7 +52,7 @@ public class MainWithInMemory {
 
         final InMemoryUserDataAccessObject userDataAccessObject = new InMemoryUserDataAccessObject();
 
-        Class<Object> user = null;
+        final Class<Object> user = null;
         userDataAccessObject.setCurrentUser(user.getName());
 
         final SignupView signupView = SignupUseCaseFactory.create(viewManagerModel, loginViewModel,
